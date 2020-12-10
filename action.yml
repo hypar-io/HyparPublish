@@ -1,0 +1,20 @@
+# action.yml
+name: "Hypar Publish"
+description: "Publish this function to Hypar."
+inputs:
+  username:
+    description: "Your Hypar user name."
+    required: true
+    default: ""
+  password:
+    description: "Your Hypar password."
+    required: true
+    default: ""
+outputs:
+  time: # id of output
+    description: "The time we greeted you"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.who-to-greet }}
