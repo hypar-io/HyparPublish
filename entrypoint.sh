@@ -5,6 +5,7 @@ dotnet tool install -g hypar.cli --version 0.8.1-alpha2
 export PATH="$PATH:/github/home/.dotnet/tools"
 echo "Hypar CLI installed."
 
-hypar --version
-
+echo "Signing in to Hypar..."
 hypar sign-in -n $1 -p $2
+
+hypar publish
