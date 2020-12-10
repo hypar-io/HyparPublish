@@ -17,9 +17,10 @@ The github repository on which this action is run must be a Hypar function.
 ```
 uses: actions/HyparPublish@master
 with:
-  username: foo
-  password: bar
+  username: ${{ secrets.hypar-username }}
+  password: ${{ secrets.hypar-password }}
 ```
+It is recommended that you store your username and password in secrets and do not transmit them in the open.
 
 ## Building and running the container locally
 ```
