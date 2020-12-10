@@ -14,12 +14,15 @@ The github repository on which this action is run must be a Hypar function.
 **Required** Your Hypar password. Default `""`.
 
 ## Example usage
-
+```
 uses: actions/HyparPublish@master
 with:
   username: foo
   password: bar
+```
 
 ## Building and running the container locally
+```
 docker build --tag hypar-publish .
 docker run hypar-publish
+```
