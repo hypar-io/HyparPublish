@@ -15,7 +15,7 @@ The github repository on which this action is run must be a Hypar function.
 
 ## Example usage
 ```
-uses: hypar-io/HyparPublish@v0.5
+uses: hypar-io/HyparPublish@v0.6
 with:
   username: ${{ secrets.hypar-username }}
   password: ${{ secrets.hypar-password }}
